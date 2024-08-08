@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Jacquard+12&family=Mochiy+Pop+One&display=swap");
+
+* {
+  font-family: "Mochiy Pop One", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --color-texto: #000000;
+  --color-fondo: #b8efea;
+  --color-fondoboton: #0cb092;
+  --color-primario: #0cb092;
+  --color-secundario: #ffffff;
+  --letra-grande: 4.1rem;
+  --letra-encabezado: 1.2rem;
+  --letra-estandar: 1rem;
+}
+
+body {
+  padding-top: 150px;
+  background-color: var(--color-fondo);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 2%;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+main{
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    padding-bottom: 100px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: var(--color-texto);
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.logo img {
+  vertical-align: middle;
+  width: 100px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.lista-naveg {
+  display: flex;
+}
+
+.lista-naveg a {
+  font-size: var(--letra-encabezado);
+  color: var(--color-texto);
+  font-weight: 600;
+  margin: 0 35px;
+  transition: all ease 0.55s;
+  white-space: nowrap;
+}
+
+.lista-naveg a:hover {
+  color: var(--color-primario);
+}
+
+.sesion {
+  display: flex;
+  align-items: center;
+}
+
+.sesion a {
+  display: inline-block;
+  padding: 10px 25px;
+  color: var(--color-fondo);
+  background: var(--color-fondoboton);
+  font-size: 14px;
+  font-weight: 500;
+  border: 4px solid #11a88c;
+  margin-right: 20px;
+  transition: all ease 0.55s;
+  border-radius: 25px;
+}
+
+.sesion a:hover {
+  background: transparent;
+  border: 4px solid var(--color-texto);
+  color: var(--color-texto);
+}
+
+#darkmode {
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--color-texto);
+  margin-left: 10px;
+}
+
+body.coloroscuro {
+  --color-texto: #ffffff;
+  --color-fondo: #076072;
+  --color-fondoboton: #0cb092;
+  --color-primario: #0cb092;
+  --color-secundario: #37a9c5;
+}
+
+.main-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-text {
+  width: 70%;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.main-img {
+  width: 30%;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.main-img img {
+  position: relative;
+  right: 18%;
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+  padding: 0 30px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: transparent;
+  padding: 0px;
+border: none;
+}
+
+h2 {
+  text-align: left;
+  color: var(--color-texto);
+  padding: 10px;
+}
+
+.accordion {
+  margin-top: 20px;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-button {
+  width: 100%;
+  padding: 15px;
+  text-align: left;
+  font-size: 16px;
+  color: var(--color-texto);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.accordion-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.accordion-content {
+  display: none;
+  padding: 15px;
+  text-align: justify;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  color: var(--color-texto);
+}
+
+.accordion-content ul {
+  padding-left: 20px;
+}
+
+.accordion-content li {
+  margin-bottom: 10px;
+}
+
+.footer {
+  background: #242628;
+  padding: 1% 0;
+  height: 75px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+}
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-text {
+  width: 10%;
+    color: #ffffff;
+    font-size: 1.5rem;
+
+}
+
+.footer-text1 {
+  width: 80%;
+  padding: 0 15px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
+}
+
+.footer-text ul li{
+    color: #ffffff34;
+    font-size: 0.5rem;
+}
+
+.creado {
+  text-align: center;
+
+}
+
+.creadonombre {
+  white-space: nowrap;
+  text-align: left;
+}
